@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
-  skillMessage: string = "I don't know what skill i have.";
+  msg: string = "I don't know what skill do i got. May be...";
+  skillMessage: string = "The skill all I got. Some language is still learning. Expection position is junior java developer, programmer." 
+  + " ";
 
   constructor() { }
 

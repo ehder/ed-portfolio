@@ -1,0 +1,116 @@
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    width: 400px;
+    padding: 1px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: rgb(248, 247, 247);
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background: linear-gradient(to bottom, rgba(255, 253, 253, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, rgb(172, 167, 167) 100%);
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 6s 0s;
+    -moz-animation: load 6s 0s;
+    -o-animation: load 6s 0s;
+  }
+
+  .bar:hover .tooltip {
+    background: blue;
+    border-radius: 3px;
+    bottom: -60px;
+    color: white;
+    display: inline;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+  }
+
+  .bar:hover .tooltip:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid blue;
+}
+  
+  .bar.front::before{
+    background: linear-gradient(to bottom, rgba(255, 253, 253, 0.1) 0%, rgba(128, 148, 128, 0.5) 75%, rgb(172, 167, 167) 100%);
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: 600px;
+    width: calc(100% - 10px);
+  }
+
+  /* For 600px device */
+  @media only screen and (max-width: 600px) {
+    .bar{
+      width: 200px;
+      padding: 1px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #FFF;
+      font-weight: bold;
+      text-align: left;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    }
+
+
+
+
+
+  }

@@ -1,10 +1,80 @@
 <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-sm-8 ">
-            <h2 class="text-white mb-4 ">My Skill?</h2>
+        <div class=" ">
+            <h2 class="text-white mb-4 ">My Skill</h2>
             <p class="text-white-50 ">
-              {{skillMessage}}
+              {{msg}}
             </p>
+        </div>
+        <div >
+            <div class="container row ">
+                <div class="col-sm-6 col-lg-6 border-end ">
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fab fa-html5 fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar basic" data-skill="html" id="mybox"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fab fa-css3-alt fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar back basic " data-skill="css3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fab fa-java fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar front advanced " data-skill="javase"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fab fa-java fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar front advanced " data-skill="springmvc"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fab fa-java fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar front expert " data-skill="springboot"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fas fa-database fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar front basic " data-skill="postgresql"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fas fa-file-code fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar front basic " data-skill="restapi"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end text-dark">
+                            <i class="fab fa-angular fw-bold fs-3"></i>
+                        </div>
+                        <div class="bar front learning" data-skill="angular"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm col-lg-6 ">
+
+                    <div class="text-muted">
+                        {{skillMessage}}
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -12,4 +12,8 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sendEmail(): void {
+    alert("Your email dosen't send. Because thsi site is still developing.");
+  }
+
 }
