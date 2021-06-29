@@ -12,7 +12,7 @@
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link text-warning" href="#about">About</a></li>
                   <li class="nav-item"><a class="nav-link text-warning" href="#projects">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link text-warning" href="#signup">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link text-warning" href="#signup">Signup</a></li>
                   
               </ul>
           </div>
@@ -35,145 +35,27 @@
 
   <!-- About-->
   <section class="about-section text-center" id="about">
-      <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-lg-8">
-                  <h2 class="text-white mb-4">Try to be a software developer</h2>
-                  <p class="text-white-50">
-                    I very much interesting in software developing.
-                  </p>
-              </div>
-          </div>
-          <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
-      </div>
+     <app-about></app-about>
   </section>
 
   <!-- Skill-->
-  <section class="skill-section text-center" id="skill">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-white mb-4">My Skill?</h2>
-                <p class="text-white-50">
-                  I don't know what skill i have.
-                </p>
-            </div>
-        </div>
-    </div>
+  <section class="skill-section text-center border" id="skill">
+    <app-skill></app-skill>
 </section>
 
   <!-- Projects-->
   <section class="projects-section text-primary" id="projects">
-      <div class="container px-4 px-lg-5">
-
-          <!-- Featured Project Row-->
-          <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-              <div class="col-xl-8 col-lg-7">
-                  <img class="img-fluid mb-3 mb-lg-0" src="assets/img/myprofile.jpg" alt="..." />
-                </div>
-              <div class="col-xl-4 col-lg-5">
-                  <div class="featured-text text-center text-lg-left">
-                      <h4>Project</h4>
-                      <p class="text-black-80 mb-0">
-                        I am proficient with Spring Boot java, Java EE. 
-                        I have good team-work spirit and communication skills. 
-                        Most of my project build with spring boot, thymeleaf, boottrap, postgresql, angular.
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <!-- Project One Row-->
-          <div class="border border-info">
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Misty</h4>
-                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Mountains</h4>
-                                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-      </div>
+      <app-project></app-project>
   </section>
+
   <!-- Signup-->
   <section class="signup-section" id="signup">
-      <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5">
-              <div class="col-md-10 col-lg-8 mx-auto text-center">
-                  <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                  <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                  <form class="form-signup d-flex flex-column flex-sm-row">
-                      <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                      <button class="btn btn-primary" type="submit">Subscribe</button>
-                  </form>
-              </div>
-          </div>
-      </div>
+    <app-signup></app-signup>
   </section>
+
   <!-- Contact-->
   <section class="contact-section bg-black">
-      <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5">
-              <div class="col-md-4 mb-3 mb-md-0">
-                  <div class="card py-4 h-100">
-                      <div class="card-body text-center">
-                          <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                          <h4 class="text-uppercase m-0">Address</h4>
-                          <hr class="my-4 mx-auto" />
-                          <div class="small text-black-50">
-                              <a href="https://www.google.com/maps/@16.7937722,94.740408,415m/data=!3m1!1e3">No.(499) Sakawar Road, Pathein, Ayeyarwady</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 mb-3 mb-md-0">
-                  <div class="card py-4 h-100">
-                      <div class="card-body text-center">
-                          <i class="fas fa-envelope text-primary mb-2"></i>
-                          <h4 class="text-uppercase m-0">Email</h4>
-                          <hr class="my-4 mx-auto" />
-                          <div class="small text-black-50"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">ehderlel@gmail.com</a></div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 mb-3 mb-md-0">
-                  <div class="card py-4 h-100">
-                      <div class="card-body text-center">
-                          <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                          <h4 class="text-uppercase m-0">Phone</h4>
-                          <hr class="my-4 mx-auto" />
-                          <div class="small text-black-50">+959 799623994</div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="social d-flex justify-content-center">
-              <!-- <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a> -->
-              <a class="mx-2" href="https://www.facebook.com/ehdarler"><i class="fab fa-facebook-f text-primary"></i></a>
-              <a class="mx-2" href="https://github.com/ehder"><i class="fab fa-github"></i></a>
-          </div>
-      </div>
+      <app-contact></app-contact>
   </section>
 
 
