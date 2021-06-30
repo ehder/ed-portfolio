@@ -1,14 +1,23 @@
 <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class=" ">
-            <h2 class="text-white mb-4 ">My Skill</h2>
+            <h2 class="text-white mb-4 text-black-80">SKILL</h2>
             <p class="text-white-50 ">
               {{msg}}
             </p>
         </div>
         <div >
             <div class="container row ">
-                <div class="col-sm-6 col-lg-6 border-end ">
+
+                <div class="col-sm-6 col-lg-6">
+
+                    <div class="row skill-percent">
+                        <div class="col">20%</div>
+                        <div class="col">40%</div>
+                        <div class="col">60%</div>
+                        <div class="col">80%</div>
+                        <div class="col">100%</div>
+                    </div>
 
                     <div class="row">
                         <div class="col text-end">
@@ -28,28 +37,35 @@
                         <div class="col text-end">
                             <i class="fab fa-java fw-bold fs-3 text-dark"></i>
                         </div>
-                        <div class="bar front advanced " data-skill="javase"></div>
+                        <div class="bar front basic" data-skill="bootstrap"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-end">
+                            <i class="fab fa-java fw-bold fs-3 text-dark"></i>
+                        </div>
+                        <div class="bar front basicplus" data-skill="javase"></div>
                     </div>
                     
                     <div class="row">
                         <div class="col text-end">
                             <i class="fab fa-java fw-bold fs-3 text-dark"></i>
                         </div>
-                        <div class="bar front advanced " data-skill="springmvc"></div>
+                        <div class="bar front basicplus " data-skill="springmvc"></div>
                     </div>
 
                     <div class="row">
                         <div class="col text-end">
                             <i class="fab fa-java fw-bold fs-3 text-dark"></i>
                         </div>
-                        <div class="bar front expert " data-skill="springboot"></div>
+                        <div class="bar front basicplus " data-skill="springboot"></div>
                     </div>
 
                     <div class="row">
                         <div class="col text-end">
                             <i class="fas fa-database fw-bold fs-3 text-dark"></i>
                         </div>
-                        <div class="bar front basic " data-skill="postgresql"></div>
+                        <div class="bar front basicplus " data-skill="postgresql"></div>
                     </div>
 
                     <div class="row">
@@ -67,13 +83,13 @@
                     </div>
                 </div>
 
-                <div class="col-sm col-lg-6 ">
-
+                <div class="col-sm-6 col-lg-6 mt-3">
                     <div class="text-muted">
                         {{skillMessage}}
                     </div>
-
                 </div>
+
+
             </div>
         </div>
     </div>

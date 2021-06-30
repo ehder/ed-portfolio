@@ -698,6 +698,7 @@ progress {
 .col-auto {
   flex: 0 0 auto;
   width: auto;
+  float: right;
 }
 
 .col-1 {
@@ -7583,16 +7584,6 @@ textarea.form-control-lg {
   color: inherit !important;
 }
 
-.text-gradient {
-  color: rgba(150, 9, 9, 0.5) !important;
-  font-weight: bold;
-}
-
-.text-gradient:hover {
-  color: rgba(78, 78, 78, 0.5) !important;
-  font-style: italic;
-}
-
 .bg-primary {
   background-color: #64a19d !important;
 }
@@ -11192,7 +11183,13 @@ body {
   background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
+}
 
+.userinput-section {
+  padding: 10rem 0 5rem 0; /* top right bottom left */
+  background: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
 }
 
 .about-section p {

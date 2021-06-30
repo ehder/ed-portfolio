@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-skill',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
-  msg: string = "I don't know what skill do i got. May be...";
+  msg: string = "what skill do i got?";
   skillMessage: string = "The skill all I got. Some language is still learning. Expection position is junior java developer, programmer." 
   + " ";
+
+  @Output()html: string = "html";
 
   constructor() { }
 

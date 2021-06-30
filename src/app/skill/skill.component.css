@@ -23,21 +23,27 @@ body{
       width: 0%
     }
   }
+
+  .skill-percent {
+    margin-left: 120px;
+  }
   
   .bar{
+    background: rgb(22, 22, 22);
     width: 400px;
-    padding: 1px;
+    padding: 0px;
     border-radius: 10px;
     margin-bottom: 5px;
-    font-size: 12px;
-    color: rgb(248, 247, 247);
+    font-size: 11px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: left;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    text-shadow: 1px 1px 1px rgba(160, 160, 160, 0.9);
   }
   .bar::before{
     content:  attr(data-skill);
-    background: linear-gradient(to bottom, rgba(255, 253, 253, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, rgb(172, 167, 167) 100%);
+    background: linear-gradient(0deg, rgba(239,239,239,1) 1%, rgba(165,163,163,1) 15%, rgba(105,103,103,1) 32%, 
+    rgba(79,79,79,1) 50%, rgba(101,101,101,1) 68%, rgba(158,158,158,1) 84%, rgba(229,229,229,1) 100%);
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -72,23 +78,38 @@ body{
 }
   
   .bar.front::before{
-    background: linear-gradient(to bottom, rgba(255, 253, 253, 0.1) 0%, rgba(128, 148, 128, 0.5) 75%, rgb(172, 167, 167) 100%);
+    background: linear-gradient(0deg, rgba(239,239,239,1) 1%, rgba(165,163,163,1) 15%, rgba(105,103,103,1) 32%, rgba(79,79,79,1) 50%, rgba(101,101,101,1) 68%, rgba(158,158,158,1) 84%, rgba(229,229,229,1) 100%);
   }
   .bar.back::before{
     background-color: #a6cfe3;
   }
   
+  .bar.startlearning::before{
+    width: calc(10% - 10px);
+  }
   .bar.learning::before{
     width: calc(20% - 10px);
+  }
+  .bar.learningplus::before{
+    width: calc(30% - 10px);
   }
   .bar.basic::before{
     width: calc(40% - 10px);
   }
+  .bar.basicplus::before{
+    width: calc(50% - 10px);
+  }
   .bar.intermediate::before{
     width: calc(60% - 10px);
   }
+  .bar.intermediateplus::before{
+    width: calc(70% - 10px);
+  }
   .bar.advanced::before{
     width: calc(80% - 10px);
+  }
+  .bar.advancedplus::before{
+    width: calc(90% - 10px);
   }
   .bar.expert::before{
     width: 600px;
@@ -96,7 +117,7 @@ body{
   }
 
   /* For 600px device */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 720px) {
     .bar{
       width: 200px;
       padding: 1px;
@@ -108,9 +129,12 @@ body{
       text-align: left;
       text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
     }
-
-
-
-
+    
+    .skill-percent {
+      display: none;
+    }
 
   }
+
+
+  
